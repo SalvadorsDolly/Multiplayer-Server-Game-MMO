@@ -1,0 +1,39 @@
+ <!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>3D multiplayer Webgl Game</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/three.js"></script>
+  <script src="js/lib/PlayerControls.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+  <script>
+   // Initialize Firebase
+   var config = {
+     apiKey: "AIzaSyB2kTR0LVhJt8RPAfuuBrIMmQq9Eyug-NQ",
+     authDomain: "multiplayerwebgl.firebaseapp.com",
+     databaseURL: "https://multiplayerwebgl.firebaseio.com",
+     projectId: "multiplayerwebgl",
+     storageBucket: "multiplayerwebgl.appspot.com",
+     messagingSenderId: "176584816255"
+   };
+   firebase.initializeApp(config);
+
+     var fbRef = firebase.database().ref( "data" );
+  </script>
+
+</head>
+<body>
+	<div id="container">
+		
+	</div>
+
+	<script src="js/player.js"></script>
+	<script src="js/game.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
